@@ -8,10 +8,14 @@ The `add` command is used to add a new single-/multiline commands to cycles.
 cycles add --name <name> --type <type> --script <script>
 ```
 `--name` The name of the cycle.
+
 `--type` (Optional) The operating system for the cycle. If not specified, it automatically uses the current.
+
 `--script/s` The script containing batch or bash commands separated by "||".
 ### RUN
 ```
-cycles <name>[index]
+cycles <name>[<index>]
 ```
-`name`
+`name` The name of the cycle.
+
+`index` (Optional) Runs the multicode with the index starting by 0.
